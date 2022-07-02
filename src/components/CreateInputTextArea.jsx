@@ -64,7 +64,7 @@ function CreateInputTextArea(props){
                     placeholder="Take a note...">
                 </textarea>
                 <Zoom in={isExpanded? true : null}>
-                    <Fab onMouseOver={mouseOver} onMouseOut={mouseOut} type="submit" onClick={() => {props.addNote(noteText, setNoteText)}}>
+                    <Fab id="btn" onMouseOver={mouseOver} onMouseOut={mouseOut} type="submit" onClick={() => {props.addNote(noteText, setNoteText)}}>
                         <AddIcon />
                     </Fab>
                 </Zoom>
